@@ -1,7 +1,5 @@
 package pl.ait;
 
-
-
 import org.junit.*;
 import org.openqa.selenium.WebDriver;
 

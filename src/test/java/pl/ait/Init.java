@@ -1,4 +1,4 @@
-package pl.lait.przychodnia3;
+package pl.ait;
 
 import java.io.File;
 import java.io.IOException;
@@ -17,7 +17,8 @@ public class Init {
 	static WebDriver driver = null;
 	
 	public static WebDriver getDriver() {
-		System.setProperty("webdriver.gecko.driver", "/Users/adam/Documents/LAIT/geckodriver");
+		System.setProperty("webdriver.gecko.driver",
+				"C:\\Users\\sot_m\\Desktop\\geckodriver-v0.20.1-win64\\geckodriver.exe");
 		log("Wewnątrz metody getDriver");
 		
 		if(driver == null) {
