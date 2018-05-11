@@ -52,8 +52,6 @@ public class Login2Test {
 		Init.sleep(3);
 		reservPage.continueButtonClick();
 		Init.sleep(5);
-		
-		
 		reserv2Page.departRadioClick();
 		reserv2Page.returnRadioClick();
 		reserv2Page.continueButtonClick();
