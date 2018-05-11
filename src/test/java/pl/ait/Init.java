@@ -17,8 +17,7 @@ public class Init {
 	static WebDriver driver = null;
 	
 	public static WebDriver getDriver() {
-		System.setProperty("webdriver.gecko.driver",
-				"C:\\Users\\sot_m\\Desktop\\geckodriver-v0.20.1-win64\\geckodriver.exe");
+		System.setProperty("webdriver.gecko.driver", "/Users/adam/Documents/LAIT/geckodriver");
 		log("Wewnątrz metody getDriver");
 		
 		if(driver == null) {
@@ -62,10 +61,10 @@ public class Init {
 	
 	public static void printScr(WebDriver driver) {
     	
-    		Timestamp timestamp = new Timestamp(System.currentTimeMillis()); 
-    		Long milis = timestamp.getTime();
+    	Timestamp timestamp = new Timestamp(System.currentTimeMillis()); 
+    	Long milis = timestamp.getTime();
     	
-    		WebDriver driver_tmp = new Augmenter().augment(driver);
+    	WebDriver driver_tmp = new Augmenter().augment(driver);
         File srcFile = ((TakesScreenshot)driver_tmp).getScreenshotAs(OutputType.FILE);
         
         try {
