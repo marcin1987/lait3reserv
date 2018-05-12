@@ -11,11 +11,13 @@ import pl.lait.pageObjects.ReservationPage;
 public class Login2Test {
 	WebDriver driver = null;
 	
+	@Ignore
 	@Before
 	public void open() {
 		driver = Init.getDriver();
 	}
 	
+	@Ignore
 	@Test
 	public void loginWithPageObjects() {
 		//System.out.println("--test3");
@@ -29,6 +31,7 @@ public class Login2Test {
 		
 		loginPage.goToLoginPage();
 		loginPage.login("tutorial", "tutorial");
+		Init.printScr(driver);
 		Init.sleep(10);
 		
 		// poniższe opóznienie zastąpione metodą sleep - z klasy Init 
