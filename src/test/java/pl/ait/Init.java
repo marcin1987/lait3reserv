@@ -34,7 +34,7 @@ public class Init {
 			
 			URL seleniumAdress = null;
 			try {
-				seleniumAdress = new URL("http://localhost:4444/wd/hub");
+				seleniumAdress = new URL("http://192.168.0.122:4444/wd/hub");
 			} catch (MalformedURLException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
