@@ -40,6 +40,8 @@ public class Init {
 				e.printStackTrace();
 			}
 			
+			
+			
 			//driver = new FirefoxDriver();
 			driver = new RemoteWebDriver(seleniumAdress, cap);
 			driver.manage().timeouts().implicitlyWait(120, TimeUnit.SECONDS);
